@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - W13 Projects</title>
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+</head>
+<body class="font-poppins">
+        <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="../index.html" class="text-2xl font-bold text-primary">W13 Projects</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-secondary transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-secondary transition-colors">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition-colors">Services</a>
+                    <a href="portfolio.html" class="text-gray-700 hover:text-secondary transition-colors">Portfolio</a>
+                    <!-- <a href="pricing-calculator.html" class="text-gray-700 hover:text-secondary transition-colors">Cost Calculator</a> -->
+                    <a href="contact.html" class="text-gray-700 hover:text-secondary transition-colors">Contact</a>
+                    <a href="get-in-touch.html" class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all">Get in Touch</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-40 hidden">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="../index.html" class="text-gray-700 hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-secondary transition-colors">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-secondary transition-colors">Services</a>
+                <a href="portfolio.html" class="text-gray-700 hover:text-secondary transition-colors">Portfolio</a>
+                <!-- <a href="pricing-calculator.html" class="text-gray-700 hover:text-secondary transition-colors">Cost Calculator</a> -->
+                <a href="contact.html" class="text-gray-700 hover:text-secondary transition-colors">Contact</a>
+                <a href="get-in-touch.html" class="bg-secondary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all text-center">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-20">
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="font-playfair text-4xl md:text-5xl font-bold text-primary">
+                            Our Story
+                        </h1>
+                        <p class="text-gray-600 leading-relaxed">
+                            W13 Projects has been at the forefront of luxury home construction since 2010. With more than 10+ years of experience, 
+                            we've established ourselves as a trusted name in custom home building, renovations, and property development. Our journey 
+                            began with a simple vision: to create exceptional homes that perfectly match our clients' dreams and lifestyle needs.
+                            We take pride in our meticulous attention to detail, innovative design approaches, and unwavering commitment to quality. 
+                            Our team of experienced professionals brings expertise in custom home building, renovations, knockdown-rebuild projects, 
+                            and property subdivision, ensuring every project is executed to the highest standards.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-home text-3xl text-secondary mb-4"></i>
+                                <h3 class="font-bold text-xl mb-2">Developing Dreams</h3>
+                                <p class="text-gray-600">We're passionate about creating homes that exceed expectations.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-trophy text-3xl text-secondary mb-4"></i>
+                                <h3 class="font-bold text-xl mb-2">Building Relationships</h3>
+                                <p class="text-gray-600">We're passionate about creating homes that exceed expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../images/Ensuite1.jpg" alt="W13 Projects Building" 
+                             class="rounded-lg shadow-xl">
+                        <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-lg">
+                            <i class="fas fa-quote-right text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-center mb-12">
+                    Our Values
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="0">
+                        <i class="fas fa-heart text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-3">Passion</h3>
+                        <p class="text-gray-600">We're passionate about creating homes that exceed expectations.</p>
+                    </div>
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-handshake text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-3">Integrity</h3>
+                        <p class="text-gray-600">Trust and transparency in every interaction.</p>
+                    </div>
+                    <div class="text-center p-6" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-star text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-3">Excellence</h3>
+                        <p class="text-gray-600">Committed to delivering the highest quality in every project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-center mb-4">Our Achievements</h2>
+                <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                    Our dedication to excellence has earned us recognition across the industry. Here are some of our key achievements.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="0">
+                        <i class="fas fa-award text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Best Builder</h3>
+                        <p class="text-gray-600">2023 Construction Excellence Award</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-leaf text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Eco-Friendly</h3>
+                        <p class="text-gray-600">Green Building Certification</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fas fa-shield-alt text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Safety First</h3>
+                        <p class="text-gray-600">Zero Incident Record 2023</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="600">
+                        <i class="fas fa-users text-4xl text-secondary mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Client Trust</h3>
+                        <p class="text-gray-600">Building relationships as strong as our foundations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">W13 Projects</h3>
+                <p class="text-gray-400">Building dreams into reality.</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-xl font-bold">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="../index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                    <li><a href="../index.html#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                    <li><a href="../index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-xl font-bold">Contact</h4>
+                <p class="text-gray-400">419 Nelson Road</p>
+                <p class="text-gray-400">Para Hills, SA</p>
+                <p class="text-gray-400">+61 401 702 009</p>
+                <p class="text-gray-400">admin@wl3projects.com.au</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-xl font-bold">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-opacity-80 transition-all">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-opacity-80 transition-all">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:bg-opacity-80 transition-all">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2024 W13 Projects. All rights reserved.</p>
+        </div>
+    </div>
+</footer> 
+ <script src="../js/navigation.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+     AOS.init({
+         once: true,
+         offset: 100,
+     });
+ </script>
+</body>
+</html> 

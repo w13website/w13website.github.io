@@ -1,0 +1,18 @@
+{
+  "name": "w13-projects",
+  "version": "1.0.0",
+  "description": "W13 Projects Website",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify",
+    "serve": "live-server"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  }
+}
