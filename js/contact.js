@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Notyf
+    // Initialize EmailJS
+    emailjs.init("YOUR_PUBLIC_KEY"); // You'll get this from EmailJS dashboard
+
     const notyf = new Notyf({
         duration: 3000,
         position: {
@@ -18,45 +20,43 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     });
 
-    // Form handling
     const form = document.getElementById('contact-form');
+    
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            // Get form fields
-            const formData = {
-                name: form.querySelector('#name').value,
-                email: form.querySelector('#email').value,
-                subject: form.querySelector('#subject').value,
-                message: form.querySelector('#message').value
-            };
+            // Get form data
+            const name = form.querySelector('#name').value;
+            const email = form.querySelector('#email').value;
+            const subject = form.querySelector('#subject').value;
+            const message = form.querySelector('#message').value;
 
             // Basic validation
-            if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            if (!name || !email || !subject || !message) {
                 notyf.error('Please fill in all fields');
                 return;
             }
 
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formData.email)) {
+            if (!emailRegex.test(email)) {
                 notyf.error('Please enter a valid email address');
                 return;
             }
 
             try {
-                const response = await fetch('http://localhost:3000/api/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                if (!response.ok) {
-                    throw new Error('Failed to send message');
-                }
+                await emailjs.send(
+                    "YOUR_SERVICE_ID", // You'll get this from EmailJS dashboard
+                    "YOUR_TEMPLATE_ID", // You'll get this from EmailJS dashboard
+                    {
+                        name,
+                        email,
+                        subject,
+                        message,
+                        to_email: "admin@w13projects.com.au"
+                    }
+                );
 
                 notyf.success('Message sent successfully! We will contact you soon.');
                 form.reset();
@@ -66,7 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // Map styling can be customized through the Google Cloud Console
-    // using the map-id parameter in the gmp-map element
 }); 
