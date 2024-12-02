@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY"); // You'll get this from EmailJS dashboard
+    emailjs.init("-Cvd5ZUltFxv8R-S3"); // You'll get this from EmailJS dashboard
 
     const notyf = new Notyf({
         duration: 3000,
@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 await emailjs.send(
-                    "YOUR_SERVICE_ID", // You'll get this from EmailJS dashboard
-                    "YOUR_TEMPLATE_ID", // You'll get this from EmailJS dashboard
+                    "service_w9cwwxe", // You'll get this from EmailJS dashboard
+                    "template_5lj4pmm", // You'll get this from EmailJS dashboard
                     {
                         firstName,
                         lastName,
