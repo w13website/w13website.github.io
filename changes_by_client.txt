@@ -25,5 +25,11 @@ remove commercial
 remove cost calculator 
 
 
-
-
+3Dec 2024
+More changes to be made:
+1. Featured project in Angle Vale 
+2. 4 Bedroom, 3 Bathroom in Angle Vale 
+3. Remove completion time from portfolio 
+4. Remove commercial from portfolio but keep the images 
+5. Cut `since 2010` from about us 
+6. Email is admin@w13projects.com.au (not wl3projects.com.au) 
