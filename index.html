@@ -9,10 +9,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     
     <title>W13 Projects - Your Dream Home Builder</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/slideshow.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -59,7 +60,20 @@
     <section id="home" class="min-h-screen relative">
         <div class="relative h-screen">
             <div class="absolute inset-0">
-                <img src="images/new-images/WhatsApp Image 2025-05-14 at 21.43.03.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                <div class="slideshow-container">
+                    <div class="slide fade active">
+                        <img src="images/new-images/WhatsApp Image 2025-05-14 at 21.43.03.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/new-images/02.JPG" alt="Hero Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/new-images/WhatsApp Image 2025-05-14 at 21.42.47.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/new-images/WhatsApp Image 2025-05-14 at 21.44.32.jpeg" alt="Hero Image" class="w-full h-full object-cover">
+                    </div>
+                </div>
                 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             </div>
             <div class="relative container mx-auto px-4 h-full flex items-center">
@@ -94,7 +108,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6" data-aos="fade-right">
                     <h2 class="font-playfair text-4xl font-bold text-primary">
-                        Building Dreams Since 2010
+                        Building Dreams
                     </h2>
                     <p class="text-gray-600">
                         W13 Projects is your trusted partner in creating exceptional living spaces. 
@@ -262,6 +276,7 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/index-contact.js"></script>
